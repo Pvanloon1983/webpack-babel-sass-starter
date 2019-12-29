@@ -1,0 +1,30 @@
+{
+  "name": "babel-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass src/scss/ -w -o dist/assets/css/",
+    "build": "webpack --mode production",
+    "serve": "webpack-dev-server --mode development",
+    "live": "live-server dist",
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run sass\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.0.2",
+    "css-loader": "^3.4.0",
+    "html-loader": "^0.5.5",
+    "node-sass": "^4.13.0",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
